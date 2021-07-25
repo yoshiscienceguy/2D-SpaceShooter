@@ -136,12 +136,12 @@ GameObject:
   - component: {fileID: 1148748}
   - component: {fileID: 1148747}
   m_Layer: 5
-  m_Name: Image
+  m_Name: HealIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1148746
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2460,7 +2460,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1275503802
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3367,7 +3367,7 @@ MonoBehaviour:
   bulletOffset: {x: 0, y: 0.5, z: 0}
   bulletPrefab: {fileID: 3987589035165349576, guid: 24a8d856d79930e44946ef6555ec1f83, type: 3}
   fireDelay: 0.25
-  HeavyIcon: {fileID: 0}
+  HeavyIcon: {fileID: 1275503801}
   HeavyWeaponsCoolDown: {fileID: 352558400}
 --- !u!114 &1556161574
 MonoBehaviour:
@@ -3402,7 +3402,7 @@ MonoBehaviour:
   invulnPeriod: 1
   shield: {fileID: 517835907}
   healthbar: {fileID: 643670777}
-  healthHeal_icon: {fileID: 0}
+  healthHeal_icon: {fileID: 1148745}
 --- !u!1 &1615345752
 GameObject:
   m_ObjectHideFlags: 0
