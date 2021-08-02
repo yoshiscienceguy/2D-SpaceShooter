@@ -42,6 +42,7 @@ public class EnemyShooting : MonoBehaviour {
 			
 			GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, transform.position + offset, transform.rotation);
 			bulletGO.layer = bulletLayer;
+			
 		}
 	}
 }

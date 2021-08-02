@@ -10,8 +10,17 @@ public class EnemySpawner : MonoBehaviour {
 	float enemyRate = 5;
 	float nextEnemy = 1;
 
-	// Update is called once per frame
-	void Update () {
+	gameManager manager;
+    private void Start()
+    {
+		manager = GetComponent<gameManager>();
+    }
+    // Update is called once per frame
+    void Update () {
+
+		if (manager.gameOver) {
+			return;
+		}
 		nextEnemy -= Time.deltaTime;
 
 		if(nextEnemy <= 0) {

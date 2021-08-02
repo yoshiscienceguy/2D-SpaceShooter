@@ -94,6 +94,12 @@ public class DamageHandler : MonoBehaviour {
 	}
 
 	void Die() {
+		GameObject.Find("GameManager").GetComponent<gameManager>().gameOver = true;
+		GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
+		foreach (GameObject enemy in enemies) {
+			Destroy(enemy, 3);
+		}
 		Destroy(gameObject);
 	}
 

@@ -25,6 +25,12 @@ public class bulletAi : MonoBehaviour
         GameObject clone = Instantiate(crashSprite, transform.position, Quaternion.identity);
         GetComponent<MoveForward>().enabled = false;
         GetComponent<BoxCollider2D>().isTrigger = true;
+
+        Health healthScript = collision.gameObject.GetComponent<Health>();
+        if (healthScript) {
+            healthScript.takeDamage(1);
+        }
+
         Destroy(clone,3);
         Destroy(gameObject);
     }
